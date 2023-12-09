@@ -1,29 +1,27 @@
-# The Movies@Mariana
+# TheMoviesAtMariana
 
-## Prompt
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
-Mariana Tek is hosting a series of events calledThe Movies@Mariana Tek this summer for camaraderie purposes. We want to be as democratic as possible, so each night we will have 3 choices that we can vote on. We need to create a small application where everyone can view the movies on the schedule, separated by date. These movies should be in a list with the following information:
+## Development server
 
-- Title
-- Poster
-- Genre(s)
-- Rating
-- Year Release
-- Metacritic Rating
-- Runtime
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-There should be one filter and one search. The filter should be by Genre. It should be a dropdown list, populated with all genres of movies currently in our list and it should hide all movies that do not match the selected genre when clicked. Bonus points if it allows for multiple selections.
+## Code scaffolding
 
-The search should be by Title. It's should be a text input that, with each character, shows each movie that matches the current string and hides each movie that doesn't.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Example
+## Build
 
-![Example Image](https://d1jfzjx68gj8xs.cloudfront.net/items/3q0I2N250A3m32321y2O/Screen%20Shot%202019-06-20%20at%206.44.02%20PM.png)
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## URL for data
+## Running unit tests
 
-[https://mariana-at-the-movies.herokuapp.com/movies](https://mariana-at-the-movies.herokuapp.com/movies)
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Where to work
+## Running end-to-end tests
 
-[https://codesandbox.io/s/](https://codesandbox.io/s/)
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
