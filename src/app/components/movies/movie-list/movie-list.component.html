@@ -1,1 +1,31 @@
-<p>movie-list works!</p>
+<div class="row">
+    <table class="table table-fit">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col" class="col-md-3">Title</th>
+            <th scope="col" class="col-md-1">Poster</th>
+            <th scope="col" class="col-md-4">Genre(s)</th>
+            <th scope="col" class="col-md-1">Rating</th>
+            <th scope="col" class="col-md-1">Year Release</th>
+            <th scope="col" class="col-md-1">Metacritic Rating</th>
+            <th scope="col" class="col-md-1">Runtime</th>
+          </tr>
+        </thead>
+    </table>
+</div>
+<div class="row" *ngFor="let date of filteredMoviesMap.keys()">
+    <label for="date" class="text-center">Movies for Day: {{date | date:'longDate'}}</label>
+    <table class="table table-fit">
+        <tbody *ngFor="let movie of filteredMoviesMap.get(date)">
+          <tr>
+            <th scope="col" class="col-md-3">{{movie.title}}</th>
+            <td scope="col" class="col-md-1"><img [src]="movie.poster" [alt]="movie.title" class="img-responsive" style="max-height: 80px"></td>
+            <td scope="col" class="col-md-4 font-weight-bold">{{movie.genre.join(', ')}}</td>
+            <td scope="col" class="col-md-1">{{movie.rated}}</td>
+            <td scope="col" class="col-md-1">{{movie.released | date:'yyyy'}}</td>
+            <td scope="col" class="col-md-1">{{movie.rating}}</td>
+            <td scope="col" class="col-md-1">{{movie.runtime}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
